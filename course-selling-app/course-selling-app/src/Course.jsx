@@ -8,7 +8,7 @@ function Course(){
     let {courseId} = useParams();
     let [course, setCourse] = useState(null);
     useEffect(()=>{
-        axios.get("http://localhost:3000/admin/course/"+ courseId, {
+        axios.get("https://course-selling-app-coursera-4pjz.vercel.app/admin/course/"+ courseId, {
             headers:{
                 "Authorization": "Bearer " +localStorage.getItem("token")
             }
@@ -137,7 +137,7 @@ return <div style={{
         <Button
         variant="contained"
         onClick={async ()=>{
-            axios.put("http://localhost:3000/admin/courses/" + course._id,{
+            axios.put("https://course-selling-app-coursera-4pjz.vercel.app/admin/courses/" + course._id,{
                 title: title,
                 description: description,
                 imageLink: image,
