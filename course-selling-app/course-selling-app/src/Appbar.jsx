@@ -8,7 +8,7 @@
         const [userEmail, setUserEmail] = useState(null)
 
         useEffect(()=>{
-            fetch("http://localhost:3000/admin/me" , {
+            fetch("https://course-selling-app-coursera-4pjz.vercel.app/admin/me" , {
                 method: "GET",
                 headers: {
                     "Authorization": "Bearer "+ localStorage.getItem("token") 
