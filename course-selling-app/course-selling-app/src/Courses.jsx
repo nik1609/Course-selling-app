@@ -7,7 +7,7 @@ function Courses(){
 
     const [courses, setCourses] = useState([]);
     useEffect(()=>{
-        fetch("http://localhost:3000/admin/courses", {
+        fetch("https://course-selling-app-coursera-4pjz.vercel.app/admin/courses", {
             method: "GET",
             headers:{
                 "Authorization": "Bearer "+localStorage.getItem("token")
