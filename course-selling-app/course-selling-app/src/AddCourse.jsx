@@ -79,7 +79,7 @@ function AddCourse(){
                 size={'large'}
                 variant={'contained'}
                 onClick={async ()=>{
-                    await axios.post("http://localhost:3000/admin/courses", {
+                    await axios.post("https://course-selling-app-coursera-4pjz.vercel.app/admin/courses", {
                         title: title,
                         description: description,
                         price: price,
